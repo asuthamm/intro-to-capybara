@@ -1,0 +1,14 @@
+from the browser, type in url with new path; you will get 404 not found
+copy the example to add to application.controller.rb
+get '/universes/1' do
+    @universe = Universe.find_by(id: 1)
+
+
+    erb :show (according to tubular)
+
+
+show.erb
+<h1>This is the show page for <%= @universe.name %></h1>
+
+<p>
+
